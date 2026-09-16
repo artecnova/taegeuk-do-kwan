@@ -12,7 +12,7 @@ import {
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBDUT0opdo44f1btYdaiB4Gi-xkLpAb7Q",
+    apiKey: "AIzaSyBDUT0opdo44f1fbtYdaiB4Gi-xkLpAb7Q",
     authDomain: "taegeuk-do-kwan.firebaseapp.com",
     projectId: "taegeuk-do-kwan",
     storageBucket: "taegeuk-do-kwan.firebasestorage.app",
