@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -72,48 +73,185 @@
         </div>
 
 
-        <section class="panel-secciones">
+        <!-- HORARIOS -->
 
-            <div class="panel-card">
+        <section class="panel-editor">
 
-                <span class="panel-icon">
-                    📅
-                </span>
+            <div class="editor-header">
 
-                <h2>
-                    Horarios
-                </h2>
+                <div>
 
-                <p>
-                    Modifica los días y horarios
-                    de entrenamiento.
-                </p>
+                    <span class="panel-icon">
+                        📅
+                    </span>
 
-                <button type="button">
-                    Editar horarios
-                </button>
+                    <h2>
+                        Horarios
+                    </h2>
+
+                    <p>
+                        Modifica los días y horarios
+                        de entrenamiento.
+                    </p>
+
+                </div>
 
             </div>
 
 
-            <div class="panel-card">
+            <form id="horarios-form">
 
-                <span class="panel-icon">
-                    📷
-                </span>
+                <div class="horarios-grid">
 
-                <h2>
-                    Fotografías
-                </h2>
 
-                <p>
-                    Sube o cambia las fotografías
-                    del club.
-                </p>
+                    <!-- LUNES -->
 
-                <button type="button">
-                    Gestionar fotografías
+                    <div class="horario-card">
+
+                        <h3>
+                            Lunes
+                        </h3>
+
+
+                        <label for="lunes-ninos">
+                            Niños
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lunes-ninos"
+                            placeholder="18:00 — 19:00"
+                            required
+                        >
+
+
+                        <label for="lunes-jovenes-adultos">
+                            Jóvenes y adultos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lunes-jovenes-adultos"
+                            placeholder="19:00 — 20:30"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MIÉRCOLES -->
+
+                    <div class="horario-card">
+
+                        <h3>
+                            Miércoles
+                        </h3>
+
+
+                        <label for="miercoles-ninos">
+                            Niños
+                        </label>
+
+                        <input
+                            type="text"
+                            id="miercoles-ninos"
+                            placeholder="18:00 — 19:00"
+                            required
+                        >
+
+
+                        <label for="miercoles-jovenes-adultos">
+                            Jóvenes y adultos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="miercoles-jovenes-adultos"
+                            placeholder="19:00 — 20:30"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- VIERNES -->
+
+                    <div class="horario-card">
+
+                        <h3>
+                            Viernes
+                        </h3>
+
+
+                        <label for="viernes-ninos">
+                            Niños
+                        </label>
+
+                        <input
+                            type="text"
+                            id="viernes-ninos"
+                            placeholder="18:00 — 19:00"
+                            required
+                        >
+
+
+                        <label for="viernes-jovenes-adultos">
+                            Jóvenes y adultos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="viernes-jovenes-adultos"
+                            placeholder="19:00 — 20:30"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="guardar-horarios"
+                >
+                    Guardar cambios
                 </button>
+
+
+                <p
+                    id="mensaje-horarios"
+                    class="mensaje-horarios"
+                ></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- FOTOGRAFÍAS -->
+
+        <section class="panel-editor">
+
+            <div class="editor-header">
+
+                <div>
+
+                    <span class="panel-icon">
+                        📷
+                    </span>
+
+                    <h2>
+                        Fotografías
+                    </h2>
+
+                    <p>
+                        Próximamente podrás gestionar
+                        las fotografías del club desde aquí.
+                    </p>
+
+                </div>
 
             </div>
 
