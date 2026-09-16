@@ -35,10 +35,3 @@ export {
     doc,
     getDoc
 };
-
-export {
-    app,
-    db,
-    doc,
-    getDoc
-};
