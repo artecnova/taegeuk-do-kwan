@@ -7,16 +7,22 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 
 
-const formulario = document.getElementById("login-form");
-const mensajeError = document.getElementById("login-error");
+const formulario =
+    document.getElementById("login-form");
+
+const mensajeError =
+    document.getElementById("login-error");
 
 
 formulario.addEventListener("submit", async (evento) => {
 
     evento.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email =
+        document.getElementById("email").value.trim();
+
+    const password =
+        document.getElementById("password").value;
 
 
     mensajeError.textContent = "";
@@ -34,10 +40,10 @@ formulario.addEventListener("submit", async (evento) => {
 
     } catch (error) {
 
-        console.error(error);
+        console.error("Error de Firebase:", error);
 
         mensajeError.textContent =
-            "Correo o contraseña incorrectos.";
+            error.code + " — " + error.message;
 
     }
 
