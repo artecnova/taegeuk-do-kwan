@@ -35,3 +35,4 @@ export {
     doc,
     getDoc
 };
+// Configuración Firebase actualizada
