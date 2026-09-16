@@ -1577,3 +1577,246 @@ footer > p {
         font-size: 1.7rem;
     }
 }
+
+/* ==========================================
+   PANEL DE ADMINISTRACIÓN
+========================================== */
+
+.admin-login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.admin-login-box {
+    width: 100%;
+    max-width: 430px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.admin-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.admin-login-box h1 {
+    margin-bottom: 8px;
+}
+
+.admin-login-box > p {
+    margin-bottom: 30px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+#login-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#login-form button,
+.guardar-horarios {
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#login-form button {
+    margin-top: 15px;
+}
+
+#login-form button:hover,
+.guardar-horarios:hover {
+    transform: translateY(-1px);
+}
+
+.login-error {
+    min-height: 20px;
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.volver-inicio {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   PANEL PRINCIPAL
+========================================== */
+
+.panel-admin {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.panel-header h1 {
+    margin: 5px 0 8px;
+}
+
+.panel-header p {
+    margin: 0;
+}
+
+.panel-header > div > span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#cerrar-sesion {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   EDITORES
+========================================== */
+
+.panel-editor {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.editor-header {
+    margin-bottom: 25px;
+}
+
+.panel-icon {
+    font-size: 30px;
+}
+
+.panel-editor h2 {
+    margin: 8px 0;
+}
+
+.panel-editor p {
+    margin-top: 0;
+}
+
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.horario-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.horario-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.horario-card label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.horario-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.guardar-horarios {
+    margin-top: 10px;
+}
+
+.mensaje-horarios {
+    min-height: 22px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .horarios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .panel-admin {
+        width: min(100% - 25px, 1100px);
+        padding: 30px 0;
+    }
+
+    .panel-editor {
+        padding: 20px;
+    }
+
+    .admin-login-box {
+        padding: 30px 22px;
+    }
+
+}
