@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Panel de administración | Taegeuk Do Kwan</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="Img/logo.png"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="panel-admin">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span>
+                    TAEGEUK DO KWAN
+                </span>
+
+                <h1>
+                    Panel de administración
+                </h1>
+
+                <p>
+                    Gestiona los contenidos del sitio web.
+                </p>
+
+            </div>
+
+
+            <button
+                id="cerrar-sesion"
+                type="button"
+            >
+                Cerrar sesión
+            </button>
+
+        </div>
+
+
+        <section class="panel-secciones">
+
+            <div class="panel-card">
+
+                <span class="panel-icon">
+                    📅
+                </span>
+
+                <h2>
+                    Horarios
+                </h2>
+
+                <p>
+                    Modifica los días y horarios
+                    de entrenamiento.
+                </p>
+
+                <button type="button">
+                    Editar horarios
+                </button>
+
+            </div>
+
+
+            <div class="panel-card">
+
+                <span class="panel-icon">
+                    📷
+                </span>
+
+                <h2>
+                    Fotografías
+                </h2>
+
+                <p>
+                    Sube o cambia las fotografías
+                    del club.
+                </p>
+
+                <button type="button">
+                    Gestionar fotografías
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <a
+            href="index.html"
+            class="volver-inicio"
+        >
+            ← Volver al sitio web
+        </a>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="panel.js"
+    ></script>
+
+</body>
+
+</html>
