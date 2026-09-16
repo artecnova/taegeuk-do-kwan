@@ -1,7 +1,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+import {
+    getFirestore,
+    doc,
+    getDoc
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBDUT0opdo44f1fbtYdaiB4Gi-xkLpAb7Q",
+    apiKey: "AIzaSyBDUT0opdo44f1btYdaiB4Gi-xkLpAb7Q",
     authDomain: "taegeuk-do-kwan.firebaseapp.com",
     projectId: "taegeuk-do-kwan",
     storageBucket: "taegeuk-do-kwan.firebasestorage.app",
@@ -9,6 +15,15 @@ const firebaseConfig = {
     appId: "1:12029049603:web:ba739a7c04123c0fde0736"
 };
 
+
 const app = initializeApp(firebaseConfig);
 
-export { app };
+const db = getFirestore(app);
+
+
+export {
+    app,
+    db,
+    doc,
+    getDoc
+};
