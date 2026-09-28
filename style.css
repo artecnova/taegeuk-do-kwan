@@ -1820,3 +1820,24 @@ footer > p {
     }
 
 }
+
+/* BOTÓN DE ADMINISTRACIÓN */
+
+.admin-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 9px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.admin-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
